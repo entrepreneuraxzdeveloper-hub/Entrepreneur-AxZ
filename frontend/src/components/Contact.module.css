@@ -1,0 +1,608 @@
+.section {
+  background-color: var(--bg-page);
+  padding: 5rem 2.25rem 6.5rem;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3.5rem;
+  align-items: stretch;
+}
+
+/* ── Left Column: Image & Depot Floating Card ── */
+.leftCol {
+  display: flex;
+  width: 100%;
+}
+
+.imageCard {
+  position: relative;
+  width: 100%;
+  min-height: 580px;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: var(--dark);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.depotImg {
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.imageCard:hover .depotImg {
+  transform: scale(1.03);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 18, 25, 0.15) 0%,
+    rgba(20, 18, 25, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+.depotFloatingCard {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 1.75rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.depotBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: rgba(122, 95, 154, 0.1);
+  color: var(--accent);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.badgeDot {
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.depotTitle {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem;
+  line-height: 1.2;
+}
+
+.depotAddress {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.hoursDivider {
+  height: 1px;
+  background-color: var(--border);
+  margin-bottom: 0.85rem;
+}
+
+.depotHoursBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.hoursDay {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.hoursTime {
+  color: var(--text-muted);
+}
+
+.depotCallRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background: var(--bg-page);
+  padding: 0.6rem 0.95rem;
+  border-radius: 8px;
+}
+
+.directLabel {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.directPhoneLink {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.directPhoneLink:hover {
+  text-decoration: underline;
+}
+
+/* ── Right Column: Form ── */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border-radius: 24px;
+  padding: 3rem 3rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.formHeader {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.redDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+.eyebrowText {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.heading {
+  font-family: var(--font-sans);
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.subtext {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Quick Contact Cards ── */
+.contactCardsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.miniCard {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: var(--bg-page);
+  padding: 0.85rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.miniCard:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.miniCardLocation {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: var(--bg-page);
+  padding: 0.75rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  position: relative;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.miniCardLocation:hover,
+.miniCardLocation:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(122, 95, 154, 0.12);
+}
+
+.locationContentWrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.miniSelectWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.miniLocationSelect {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.1rem 1.4rem 0.1rem 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.miniSelectChevron {
+  position: absolute;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.customLocationBox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.miniLocationInput {
+  flex: 1;
+  min-width: 0;
+  background: var(--surface);
+  border: 1.5px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.miniResetBtn {
+  background: rgba(122, 95, 154, 0.15);
+  color: var(--accent);
+  border: none;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+
+.miniResetBtn:hover {
+  background: rgba(122, 95, 154, 0.3);
+}
+
+.miniIconWrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.miniIconWrap svg {
+  width: 17px;
+  height: 17px;
+}
+
+.miniLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.miniVal {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+/* ── Form Controls ── */
+.inquiryForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.inputField label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+
+.inputField input,
+.inputField textarea {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+
+.inputField input:focus,
+.inputField textarea:focus {
+  border-color: var(--accent);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.12);
+}
+
+.selectWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.selectWrapper select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem 0.8rem 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.selectWrapper select:focus {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.dropdownArrow {
+  position: absolute;
+  right: 0.85rem;
+  width: 14px;
+  height: 14px;
+  color: var(--text-primary);
+  pointer-events: none;
+}
+
+.formButtonRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--dark);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.95rem 1.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.submitBtn:hover {
+  background: #1a1820;
+  transform: translateY(-2px);
+}
+
+.submitArrow {
+  font-size: 1rem;
+}
+
+.whatsappActionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.5rem;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #128C7E;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsappActionBtn:hover {
+  background-color: #f7faf8;
+  color: #075E54;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.whatsappLogoImg {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ── Success Block ── */
+.successBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: rgba(183, 197, 184, 0.3);
+  border: 1px solid var(--secondary);
+  border-radius: 14px;
+  padding: 1.75rem;
+}
+
+.successIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.successTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 0.35rem;
+}
+
+.successMsg {
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .imageCard {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.25rem 4.5rem;
+  }
+  .rightCol {
+    padding: 2rem 1.5rem;
+  }
+  .inputRow {
+    grid-template-columns: 1fr;
+  }
+  .contactCardsRow {
+    grid-template-columns: 1fr;
+  }
+  .depotFloatingCard {
+    bottom: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    padding: 1.25rem;
+  }
+  .formButtonRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .submitBtn,
+  .whatsappActionBtn {
+    justify-content: center;
+    width: 100%;
+  }
+}

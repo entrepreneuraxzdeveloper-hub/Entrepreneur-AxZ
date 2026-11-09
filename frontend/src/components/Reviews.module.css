@@ -1,0 +1,140 @@
+.section {
+  background-color: var(--bg-page);
+  padding: 5rem 2.25rem 8rem;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* ── Header Block ── */
+.headerBlock {
+  margin-bottom: 3.5rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.redDot {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.heading {
+  font-family: var(--font-sans);
+  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* ── 3 Testimonial Cards ── */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.quoteCard {
+  background-color: var(--surface);
+  border-radius: 20px;
+  padding: 3.5rem 2.5rem 3.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 380px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.quoteCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.quoteMark {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  user-select: none;
+}
+
+.quoteText {
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.authorBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.authorName {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.authorRole {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .quoteCard {
+    min-height: auto;
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  .headerBlock {
+    margin-bottom: 2.5rem;
+  }
+}

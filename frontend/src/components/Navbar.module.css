@@ -1,0 +1,335 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--bg-page);
+  padding: 1.25rem 2.5rem;
+  transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(var(--bg-page-rgb), 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  padding: 0.9rem 2.5rem;
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* ── Brand Logo ── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.brandLogoImg {
+  width: auto;
+  height: 42px;
+  max-width: 110px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.logo:hover .brandLogoImg {
+  transform: scale(1.03);
+}
+
+.logoIcon {
+  width: 38px;
+  height: 38px;
+  background-color: var(--dark);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.logo:hover .brandLogoImg {
+  width: auto;
+  height: 42px;
+  max-width: 110px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.logo:hover .brandLogoImg {
+  transform: scale(1.03);
+}
+
+.logoIcon {
+  transform: scale(1.04);
+}
+
+.logoDot {
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-on-dark);
+  border-radius: 50%;
+  display: block;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brandTitle {
+  font-family: var(--font-sans);
+  font-size: 1.12rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.brandSub {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  text-transform: none;
+  margin-top: 2px;
+}
+
+/* ── Center Capsule Nav ── */
+.centerNav {
+  display: flex;
+  align-items: center;
+}
+
+.pillList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 0.35rem 0.65rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  gap: 0.25rem;
+  white-space: nowrap;
+}
+
+.navItem {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2b2733;
+  border-radius: 9999px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.navItem:hover {
+  color: var(--accent);
+  background-color: rgba(var(--accent-rgb), 0.1);
+}
+
+.activeNavItem {
+  color: #ffffff;
+  background-color: var(--accent);
+  font-weight: 800;
+}
+
+/* ── Right Advisor CTA ── */
+.ctaGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.advisorBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: var(--dark);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.72rem 1.45rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.advisorBtn:hover {
+  background-color: #1a1820;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+.phoneIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.phoneNum {
+  white-space: nowrap;
+  display: inline-block;
+  letter-spacing: 0.04em;
+}
+
+.btnDot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--accent-on-dark);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ── Mobile Hamburger ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  width: 34px;
+  height: 34px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--text-primary);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+  border-radius: 2px;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile Drawer ── */
+.mobileDrawer {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-page);
+  z-index: 999;
+  padding: 6.5rem 2rem 3rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s var(--ease-out), opacity 0.3s ease, visibility 0.4s;
+}
+
+.mobileDrawer.drawerOpen {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobileNavContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.mobileLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobileLink {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.mobileLink:hover,
+.mobileActive {
+  color: var(--accent);
+  padding-left: 0.4rem;
+}
+
+.mobileAdvisorBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--dark);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1rem 1.8rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .parentBrandTag {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  .centerNav,
+  .advisorBtn {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "name": "Rahul Roy Chowdhury",
+      "email": "admin@axz.com",
+      "password": "$2a$10$fcWArWBYz2WT.TOmS.FM9e2Q5GBo/k1YlFmRRXEk7UMaR3Sz0nEhu",
+      "role": "admin",
+      "createdAt": "2026-11-09T05:42:17.394Z"
+    },
+    {
+      "id": "usr_client_01",
+      "name": "Tanmay Dutta",
+      "email": "tanmay@axz.com",
+      "password": "$2a$10$NqzsTcs5pFI7bbgac0O6TOKBa0BwOwS/OgiL3fmEvMwRN6sXYbYYe",
+      "role": "user",
+      "createdAt": "2026-11-09T05:42:17.395Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_bricks_01",
+      "name": "Red Clay Construction Bricks",
+      "category": "Masonry",
+      "price": "₹14,000",
+      "unit": "Per 1000 Pieces",
+      "variety": "1 No. (₹14,000) • Solling (₹16,000)",
+      "badge": "1 NO. & SOLLING",
+      "images": [
+        "/images/updated/bricks-red-clay.jpeg"
+      ],
+      "specs": [
+        "Uniform shape & sharp edges",
+        "High compressive strength",
+        "Ideal for walls & solling"
+      ],
+      "description": "First-class red clay bricks directly sourced from Kilns. Ideal for high-durability load-bearing walls and brick solling foundations.",
+      "inStock": true,
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T06:11:43.388Z"
+    },
+    {
+      "id": "prod_cement_02",
+      "name": "Certified Cement (Ultratech & JSW)",
+      "category": "Cement & Steel",
+      "price": "₹0",
+      "unit": "Per 50kg Bag (+ GST)",
+      "variety": "Ultratech: ₹330/- • JSW: ₹320/- • ACC F2R",
+      "badge": "PPC / PSC GRADE",
+      "images": [
+        "/images/updated/cement-ultratech-stack.jpeg"
+      ],
+      "specs": [
+        "Fresh factory direct batches",
+        "Weather Pro & rapid hardening",
+        "Optimal concrete bonding"
+      ],
+      "description": "Factory-sealed, freshly packed 50kg cement bags for high early strength, weather shielding, and foundation casting.",
+      "inStock": true,
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T06:11:48.160Z"
+    },
+    {
+      "id": "prod_tmt_03",
+      "name": "TMT Steel Rebar (Fe 550D Saria)",
+      "category": "Cement & Steel",
+      "price": "Market Wholesale Rate",
+      "unit": "Per M.Tonn / Bundle",
+      "variety": "Tata Tiscon • Shyam Steel • Skysail • Elegant",
+      "badge": "FE 550D IRON SARIA",
+      "images": [
+        "/images/updated/iron-saria-ribbed.jpeg"
+      ],
+      "specs": [
+        "8mm to 32mm diameters",
+        "Superior earthquake & fatigue resistance",
+        "Deep uniform ribs for concrete grip"
+      ],
+      "description": "High ductile earthquake-resistant Fe 550D thermo-mechanically treated rebars with mill test certifications.",
+      "inStock": true,
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T05:42:17.395Z"
+    },
+    {
+      "id": "prod_sand_04",
+      "name": "Sand for Casting & Plastering",
+      "category": "Sand & Aggregate",
+      "price": "₹0",
+      "unit": "Per 4 M.Tonns (River / M-Sand)",
+      "variety": "Silver Sand: ₹2,900 / 100 Sq.Ft • Coarse Sand",
+      "badge": "QUALITY M-SAND",
+      "images": [
+        "/images/updated/sand-river-pile.jpeg"
+      ],
+      "specs": [
+        "Double-screened silt-free",
+        "Optimal fineness modulus",
+        "Ready for slab casting & smooth plaster"
+      ],
+      "description": "Washed and graded sand available for heavy RCC slab casting, masonry mortar, and fine wall plaster.",
+      "inStock": true,
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T06:11:56.108Z"
+    },
+    {
+      "id": "prod_stone_05",
+      "name": "Crushed Black Stone Chips (Aggregate)",
+      "category": "Sand & Aggregate",
+      "price": "₹0",
+      "unit": "Per Cubic Foot",
+      "variety": "5/8 inch • 3/4 inch (20mm) • 1/2 inch (12mm) • 10mm",
+      "badge": "PAKVO EMBEDMENT",
+      "images": [
+        "/images/updated/bajri-stone-chips.jpeg"
+      ],
+      "specs": [
+        "Pakur black stone quality",
+        "Angular shape with zero mud",
+        "Maximum concrete compaction strength"
+      ],
+      "description": "Heavy Pakur crushed black stone chips for reinforced concrete, pile foundations, beams, and columns.",
+      "inStock": true,
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T06:12:02.198Z"
+    },
+    {
+      "id": "prod_paint_06",
+      "name": "Dulux & Berger Architectural Paints",
+      "category": "Finishes & Paints",
+      "price": "Dealer Discounted Rate",
+      "unit": "Per 20L Bucket / 1L Can",
+      "variety": "WeatherShield Max • Walmasta • Bison Acrylic Emulsion",
+      "badge": "DEALER AUTHORIZED",
+      "images": [
+        "/images/paints.jpg"
+      ],
+      "specs": [
+        "UV & anti-fungal barrier",
+        "High washability coverage",
+        "1500+ computerized tint colors"
+      ],
+      "description": "Exterior and interior paints, primers, waterproof sealants, and acrylic putty with computerized custom tinting.",
+      "inStock": true,
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T05:42:17.395Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "serv_delivery_01",
+      "title": "Direct On-Site Delivery & Unloading",
+      "category": "Logistics",
+      "shortDesc": "Prompt delivery right to your construction site across Howrah, Kolkata, and adjacent zones.",
+      "description": "Our dedicated transport fleet consisting of 6-wheeler and 10-wheeler dumper trucks delivers raw bulk materials and finishes with on-time unloading assistance.",
+      "icon": "truck",
+      "image": "/images/updated/storefront-entrance.jpeg",
+      "features": [
+        "Direct factory-to-site dispatch",
+        "GPS-tracked delivery scheduling",
+        "Labour unloading arrangements available",
+        "Milestone-based bulk drop-offs"
+      ],
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T05:42:17.395Z"
+    },
+    {
+      "id": "serv_quote_02",
+      "title": "Universal Transparent Quotation",
+      "category": "Consultation",
+      "shortDesc": "Itemized, GST-accurate bill of materials benchmarked against wholesale market rates.",
+      "description": "Get an accurate pricing breakdown without hidden surcharges. Compare varieties of cement, TMT bar brands, and aggregate sizes before placing orders.",
+      "icon": "file-text",
+      "image": "/images/updated/cement-ultratech-stack.jpeg",
+      "features": [
+        "Zero hidden fees or surprise freight costs",
+        "GST invoice compliant for tax credits",
+        "Custom volume slabs for builders & contractors",
+        "Instant quote turnaround within 30 minutes"
+      ],
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T05:42:17.395Z"
+    },
+    {
+      "id": "serv_qc_03",
+      "title": "Batch Quality & Test Certification",
+      "category": "Quality Assurance",
+      "shortDesc": "Verified compressive strength and Fe 550D rebar mill test reports before dispatch.",
+      "description": "Quality is non-negotiable for lasting infrastructure. We provide certified laboratory test results and factory authenticity certificates on every batch.",
+      "icon": "check-circle",
+      "image": "/images/updated/iron-saria-ribbed.jpeg",
+      "features": [
+        "Fe 550D bend & rebend test reports",
+        "Factory fresh 3-month cement seal check",
+        "Silt-percentage verification for river sand",
+        "Batch tracking from manufacturer dispatch"
+      ],
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T05:42:17.395Z"
+    },
+    {
+      "id": "serv_contract_04",
+      "title": "Long-Term Contractor Supply Contracts",
+      "category": "Commercial",
+      "shortDesc": "Price-lock agreements and continuous phased supply for residential and commercial complexes.",
+      "description": "Protect your building budget against steel and cement volatility with milestone-bound commercial supply agreements managed by dedicated account managers.",
+      "icon": "briefcase",
+      "image": "/images/updated/bricks-red-clay.jpeg",
+      "features": [
+        "Secured stock reservation in local depots",
+        "Priority queuing for emergency slab casting days",
+        "Flexible credit and milestone payment cycles",
+        "Single point-of-contact logistics manager"
+      ],
+      "createdAt": "2026-11-09T05:42:17.395Z",
+      "updatedAt": "2026-11-09T05:42:17.395Z"
+    }
+  ],
+  "inquiries": [],
+  "company": {
+    "facilityName": "Sankrailjala Materials Depot, Howrah, West Bengal",
+    "operatingSchedule": "Mon – Sat: 8:00 AM – 7:00 PM (Sunday: On-site prior booking dispatch)",
+    "hotline": "+91 9073453034",
+    "hotlineSubtitle": "Instant Quotes & Site Dispatch",
+    "coverageRegion": "Howrah, Kolkata, Sarenga, Beltala & Greater Bengal Sites",
+    "materialsGuarantee": "100% Genuine Ultratech, Tata Tiscon, Red Clay Bricks & M-Sand",
+    "email": "royenterprise.contact@gmail.com",
+    "director": "Rahul Roy Chowdhury",
+    "brandName": "Entrepreneur AxZ",
+    "parentCompany": "Roychowdhury and Sons",
+    "updatedAt": "2026-11-09T06:43:30.920Z"
+  },
+  "pricingTable": [
+    {
+      "id": "price_row_01",
+      "description": "River / M-Sand",
+      "tag": "⭐ Quality",
+      "standardUnit": "4 M.Tonns",
+      "brandVariety": "RCC Casting Quality Sand",
+      "benchmarkRate": "₹0",
+      "order": 1,
+      "updatedAt": "2026-11-09T06:12:33.967Z"
+    },
+    {
+      "id": "price_row_02",
+      "description": "Silver Sand",
+      "tag": "",
+      "standardUnit": "100 Sq.Ft",
+      "brandVariety": "Plastering & Fine Finish Sand",
+      "benchmarkRate": "₹0",
+      "order": 2,
+      "updatedAt": "2026-11-09T06:12:40.494Z"
+    },
+    {
+      "id": "price_row_03",
+      "description": "5/8\" Stone Aggregate",
+      "tag": "",
+      "standardUnit": "4 M.Tonns",
+      "brandVariety": "16mm Angular Ballast",
+      "benchmarkRate": "₹0",
+      "order": 3,
+      "updatedAt": "2026-11-09T06:12:44.931Z"
+    },
+    {
+      "id": "price_row_04",
+      "description": "Cement (PPC / PSC)",
+      "tag": "",
+      "standardUnit": "1 Bag (50kg)",
+      "brandVariety": "Ultratech (₹330/- + GST) | JSW (₹320/-)",
+      "benchmarkRate": "₹0",
+      "order": 4,
+      "updatedAt": "2026-11-09T06:12:52.035Z"
+    },
+    {
+      "id": "price_row_05",
+      "description": "Waterproofing Chemical (No Damping)",
+      "tag": "",
+      "standardUnit": "20 Litres",
+      "brandVariety": "Red Grade (₹2,600/-) | Gold Grade (₹6,400/-)",
+      "benchmarkRate": "₹0",
+      "order": 5,
+      "updatedAt": "2026-11-09T06:12:56.631Z"
+    },
+    {
+      "id": "price_row_06",
+      "description": "Bricks",
+      "tag": "",
+      "standardUnit": "1000 Pieces",
+      "brandVariety": "1 No. (₹14,000/-) | Solling (₹16,000/-)",
+      "benchmarkRate": "₹0",
+      "order": 6,
+      "updatedAt": "2026-11-09T06:13:00.763Z"
+    },
+    {
+      "id": "price_row_07",
+      "description": "TMT Steel Bar",
+      "tag": "",
+      "standardUnit": "M.Tonns",
+      "brandVariety": "Tata Tiscon / Shyam Steel / Skysail (Fe 550D)",
+      "benchmarkRate": "₹0",
+      "order": 7,
+      "updatedAt": "2026-11-09T06:13:09.540Z"
+    },
+    {
+      "id": "price_row_08",
+      "description": "Paints & Emulsions",
+      "tag": "",
+      "standardUnit": "Per Litre / Bucket",
+      "brandVariety": "By Choice: Dulux / Berger / Asian Paints",
+      "benchmarkRate": "Catalog Choice",
+      "order": 8,
+      "updatedAt": "2026-11-09T05:43:28.615Z"
+    }
+  ],
+  "pricingNote": "⚠️ Rates are based on market value & wholesale volume. Payment milestones: 30% advance on confirmation, 40% during site progress, 30% on completion."
+}

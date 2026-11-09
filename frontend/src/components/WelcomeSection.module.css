@@ -1,0 +1,106 @@
+.welcomeSection {
+  background-color: var(--bg-page);
+  padding: 8rem 2rem 9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ── Eyebrow Badge ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.redDot {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.eyebrowText {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+/* ── Main Statement Heading ── */
+.heading {
+  font-family: var(--font-sans);
+  font-size: clamp(2.4rem, 5.2vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin: 0 0 2rem;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+/* ── Supporting Narrative Paragraph ── */
+.subtext {
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.68;
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 0 2.75rem;
+}
+
+/* ── CTA Button ── */
+.ctaWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ctaPillBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.95rem 2rem;
+  border-radius: 5px;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.ctaPillBtn:hover {
+  background-color: var(--surface);
+  border-color: var(--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  .welcomeSection {
+    padding: 5rem 1.5rem 6rem;
+  }
+  .subtext {
+    margin-bottom: 2.25rem;
+  }
+}

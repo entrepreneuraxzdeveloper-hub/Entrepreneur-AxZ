@@ -1,0 +1,337 @@
+.footer {
+  background-color: var(--dark);
+  color: #ffffff;
+  padding: 5.5rem 2.25rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top Info Grid ── */
+.topGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 4rem;
+  padding-bottom: 4.5rem;
+}
+
+/* Col 1: Socials & Mission */
+.brandCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogoWrap {
+  margin-bottom: 1.25rem;
+}
+
+.footerLogo {
+  width: auto;
+  height: 48px;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
+}
+
+.parentBrandBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--accent-on-dark);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+  align-self: flex-start;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-on-dark);
+}
+
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.socialCircle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.socialCircle svg {
+  width: 17px;
+  height: 17px;
+}
+
+.socialCircle:hover {
+  border-color: var(--accent-on-dark);
+  background-color: rgba(var(--accent-rgb), 0.15);
+  transform: translateY(-2px);
+}
+
+.missionHeadline {
+  font-family: var(--font-sans);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin: 0 0 1.25rem;
+}
+
+.missionSubtext {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 380px;
+  margin: 0;
+}
+
+/* Col 2: Quick Links */
+.linksCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.colTitle {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 1.5rem;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.navLink {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.activeLink {
+  color: var(--accent-on-dark);
+  font-weight: 600;
+}
+
+/* Col 3: Contact */
+.contactCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.contactRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.contactLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.phoneHighlight {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-on-dark);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.phoneHighlight:hover {
+  color: #ffffff;
+}
+
+.contactText {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+}
+
+.btnWrap {
+  margin-top: 0.5rem;
+}
+
+.talkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.85rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(var(--accent-rgb), 0.3);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.talkBtn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.btnDot {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ── Legal & Copyright Row ── */
+.legalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.legalLink {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLink:hover {
+  color: #ffffff;
+}
+
+/* ── Giant Outlined Typography Banner ── */
+.giantOutlineWrap {
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.giantOutlineWord {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 0.3em;
+  width: 100%;
+}
+
+.outlinePrimary {
+  font-family: var(--font-sans);
+  font-size: clamp(2.2rem, 6.5vw, 7.8rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+  color: transparent;
+  -webkit-text-stroke: 1.8px var(--accent-on-dark);
+  text-transform: uppercase;
+  display: inline-block;
+  opacity: 0.9;
+}
+
+.outlineSecondary {
+  font-family: var(--font-sans);
+  font-size: clamp(2.2rem, 6.5vw, 7.8rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  color: var(--accent-on-dark);
+  -webkit-text-stroke: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 0;
+  opacity: 0.95;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .topGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .legalRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 3.5rem 1.25rem 0;
+  }
+  .outlinePrimary {
+    -webkit-text-stroke: 1.2px var(--accent-on-dark);
+  }
+}

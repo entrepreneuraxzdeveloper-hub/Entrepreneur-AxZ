@@ -1,0 +1,123 @@
+.adminWrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+}
+
+.adminFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.offlineNotice {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background: #F4F4F4;
+}
+
+.noticeCard {
+  max-width: 520px;
+  background: #FFFFFF;
+  border: 1px solid #D9D6DE;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 30px rgba(46, 43, 53, 0.08);
+}
+
+.noticeIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.noticeTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #2E2B35;
+  margin-bottom: 0.65rem;
+}
+
+.noticeDesc {
+  font-size: 0.88rem;
+  color: #6B6874;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.codeSnippet {
+  background: #FAF9FB;
+  border: 1px solid #D9D6DE;
+  border-radius: 8px;
+  padding: 0.85rem 1.25rem;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #7A5F9A;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.retryBtn {
+  background: #7A5F9A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  height: 38px;
+  padding: 0 1.5rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.18s ease;
+  box-shadow: 0 2px 8px rgba(122, 95, 154, 0.25);
+}
+
+.retryBtn:hover {
+  background: #684E86;
+  transform: translateY(-1px);
+}
+
+.floatingHomeBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(46, 43, 53, 0.92);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.18s ease;
+  opacity: 0.75;
+}
+
+.floatingHomeBtn:hover {
+  opacity: 1;
+  background: #7A5F9A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(122, 95, 154, 0.35);
+}

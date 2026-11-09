@@ -1,0 +1,324 @@
+.section {
+  background-color: var(--bg-page);
+  padding: 4rem 2.25rem 7.5rem;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* ── Section Header ── */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.titleBlock {
+  max-width: 650px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.redDot {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.heading {
+  font-family: var(--font-sans);
+  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.subtext {
+  font-family: var(--font-sans);
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  line-height: 1.62;
+  color: var(--text-muted);
+  max-width: 440px;
+  margin: 0;
+}
+
+/* ── Small Section Label ── */
+.labelRow {
+  margin-bottom: 1.25rem;
+}
+
+.sectionTag {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ── 3-Column Bento Grid ── */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* Column 1: Tall Arch Card */
+.tallCardCol {
+  display: flex;
+}
+
+.tallCard {
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--dark);
+}
+
+.cardImg {
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.tallCard:hover .cardImg {
+  transform: scale(1.03);
+}
+
+.tallCardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.25rem 2rem;
+  z-index: 2;
+}
+
+.tallCardHeading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Column 2 & 3: Stacked Columns */
+.stackedCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Common Header within cards */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.cardNumRed {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.cardDotRed {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.cardNumWhite {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.cardDotWhite {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Tile 01: White Card */
+.whiteCard {
+  background-color: var(--surface);
+  border-radius: 20px;
+  padding: 2rem 2.25rem 2.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whiteCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.cardTitleDark {
+  font-family: var(--font-sans);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 0.85rem;
+}
+
+.cardDescDark {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Tile 02: Red Card (Accent-Soft) */
+.redCard {
+  background-color: var(--accent-soft);
+  border-radius: 20px;
+  padding: 2rem 2.25rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.redCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(var(--dark-rgb), 0.12);
+}
+
+.cardTitleWhite {
+  font-family: var(--font-sans);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 0.85rem;
+}
+
+.redCard .cardTitleWhite {
+  color: var(--text-primary);
+}
+
+.cardDescWhite {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Tile: Image Tile (Kitchen) */
+.imageCardTile {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10.5;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--border);
+}
+
+.imageCardTile:hover .cardImg {
+  transform: scale(1.03);
+}
+
+/* Tile 03: Dark Card */
+.darkCard {
+  background-color: var(--dark);
+  border-radius: 20px;
+  padding: 2rem 2.25rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.darkCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.darkCard .cardNumRed {
+  color: var(--accent-on-dark);
+}
+
+.darkCard .cardDotRed {
+  background-color: var(--accent-on-dark);
+}
+
+.cardDescMuted {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .bentoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .tallCard {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}

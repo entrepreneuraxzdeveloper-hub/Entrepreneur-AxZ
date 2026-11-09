@@ -1,0 +1,52 @@
+.marqueeStrip {
+  background-color: var(--accent);
+  overflow: hidden;
+  padding: 0.9rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scrollMarquee 32s linear infinite;
+}
+
+.marqueeStrip:hover .track {
+  animation-play-state: paused;
+}
+
+.itemWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+}
+
+.bulletDot {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.itemText {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
