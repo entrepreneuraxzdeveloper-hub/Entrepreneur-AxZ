@@ -113,12 +113,12 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Column 2: Architectural Infrastructure & Project Solene */}
+          {/* Column 2: Storefront Entrance & Headquarters */}
           <div className={styles.imageColMiddle}>
             <div className={styles.imageCard}>
               <Image
-                src="/images/updated/prop_solene.jpg"
-                alt="Entrepreneur AxZ Architectural Infrastructure & Materials Supply"
+                src="/images/updated/storefront-entrance.jpeg"
+                alt="Entrepreneur AxZ Storefront Entrance and Main Depot"
                 fill
                 priority
                 loading="eager"
@@ -127,17 +127,17 @@ export default function Hero() {
               />
               <div className={styles.cardFloatingTag}>
                 <span className={styles.tagDot} />
-                <span>ARCHITECTURAL SUPPLY • SOLENE</span>
+                <span>STOREFRONT ENTRANCE • MAIN DEPOT</span>
               </div>
             </div>
           </div>
 
-          {/* Column 3: Premium Designer & Vitrified Tiles */}
+          {/* Column 3: Roycon Materials Facility & Storefront */}
           <div className={styles.imageColRight}>
             <div className={styles.imageCard}>
               <Image
-                src="/images/updated/tiles.jpg"
-                alt="Vitrified & Ceramic Architectural Tiles Collection"
+                src="/images/updated/storefront-roycon.jpeg"
+                alt="Entrepreneur AxZ and Roycon Commercial Materials Facility"
                 fill
                 priority
                 loading="eager"
@@ -146,7 +146,7 @@ export default function Hero() {
               />
               <div className={styles.cardFloatingTag}>
                 <span className={styles.tagDot} />
-                <span>PREMIUM TILES & SURFACES</span>
+                <span>SUPPLY DEPOT • ROYCON</span>
               </div>
             </div>
           </div>
