@@ -15,7 +15,7 @@ export default function Footer() {
           <div className={styles.brandCol}>
             <div className={styles.footerLogoWrap}>
               <Image
-                src="/images/updated/Logo.png"
+                src="/images/updated/Logo Dark.png"
                 alt="Entrepreneur AxZ Logo"
                 width={150}
                 height={60}
